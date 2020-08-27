@@ -5,7 +5,9 @@ from playsound import playsound
 
 import glob
 
-sound_path = ('music_path', 'other_music_path')
+sound_path = ('sound_path', 'multiple_sound_path')
+
+sound_path = [x + '/*' for x in sound_path]
 
 def get_sound_list():
     
